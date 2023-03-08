@@ -1,0 +1,25 @@
+package Ar;
+
+import java.util.ArrayList;
+
+public class negnum {
+
+	public void segregateElements(int arr[], int n)
+    {
+        // Your code goes here
+        ArrayList<Integer> l = new ArrayList<>();
+         
+         for(int i=0;i<n;i++){
+             if(arr[i]>=0){
+                 l.add(arr[i]);
+             }
+         }
+             for(int i=0;i<n;i++){
+                 if(arr[i]<0){
+                    l.add(arr[i]) ;
+                 }
+             }
+             for(int j=0;j<n;j++){
+                 arr[j]=l.get(j);
+             }
+         }
